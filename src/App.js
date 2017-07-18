@@ -8,9 +8,10 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      messages: props.messages
-    }
-    }
+      messages: props.messages,
+      selected: false
+  }
+  }
   render() {
     return (
       <div>

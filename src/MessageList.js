@@ -1,25 +1,16 @@
-// import React from 'react';
-//
-//
-//
-// const MessageList = ({messages}) => {
-//     return (
-//       // <h1>{messages[0].subject}</h1>
-//       <div>
-//       {messages.map (e =>
-//     {e.subject})}
-//       </div>
-//       )
-//
-//   }
-//
-// export default MessageList;
-
 import React from 'react';
 
-const MessageList = ({messages}) => {
-  return(
-    <div>{messages.map(e =>
+class MessageList extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+selectMessage = (messages) => {
+console.log('clicked');
+}
+
+render(){
+  return (
+    <div>{this.props.messages.map(e =>
       <div className="row message read">
       <div className="col-xs-1">
       <div className="row">
@@ -39,6 +30,6 @@ const MessageList = ({messages}) => {
       </div>
     )}
     </div>
-)}
-
+  )}
+}
 export default MessageList;
