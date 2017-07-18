@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import MessageList from './MessageList.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'font-awesome/css/font-awesome.css';
@@ -70,5 +69,5 @@ const messages = [
   }
 ]
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App messages = {messages} />, document.getElementById('root'));
 registerServiceWorker();
