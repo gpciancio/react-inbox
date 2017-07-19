@@ -6,8 +6,6 @@ class Toolbar extends React.Component {
   render() {
     return (
 <div>
-<h1>hello from Toolbar</h1>
-
 <div className="row toolbar">
   <div className="col-md-12">
     <p className="pull-right">
